@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  /* background: linear-gradient(45deg, #030851, #690f8d); */
+  background: linear-gradient(45deg, #7b287d, #1c5943);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-top: -3.1rem;
+  margin-bottom: 3.1rem;
+}
+
+h1 span {
+  color: #ff2963;
+}
+
+textarea {
+  width: 37.5rem;
+  /* width: 50%; */
+  height: 15.6rem;
+  background: #403d84;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  padding: 1.2rem;
+  border-radius: 10px;
+  resize: none;
+  margin-bottom: 1.8rem;
+}
+
+textarea::placeholder {
+  font-size: 1rem;
+  color: white;
+}
+
+.row {
+  width: 37.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+button {
+  background: #ff2963;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.6rem 1.8rem;
+  cursor: pointer;
+  border-radius: 2.1rem;
+  display: flex;
+  align-items: center;
+  transition: transform 0.1s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button img {
+  width: 1rem;
+  margin-right: 0.6rem;
+}
+
+select {
+  flex: 1;
+  color: #fff;
+  background: #403d84;
+  height: 3.1rem;
+  padding: 0 1.2rem;
+  outline: none;
+  border: none;
+  border-radius: 2.1rem;
+  appearance: none;
+  background-image: url(images/dropdown.png);
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position-x: calc(100% - 1.2rem);
+  background-position-y: 1.2rem;
+}
+
+@media (max-width: 644px) {
+  textarea {
+    width: 90%;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    align-items: center;
+    text-align: center;
+  }
+
+  h1 span {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  #sel {
+    width: 50%;
+    padding: 1rem 4rem 1rem 1rem;
+  }
+}
