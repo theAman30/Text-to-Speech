@@ -10,7 +10,6 @@
 .hero {
   width: 100%;
   min-height: 100vh;
-  /* background: linear-gradient(45deg, #030851, #690f8d); */
   background: linear-gradient(45deg, #7b287d, #1c5943);
   display: flex;
   justify-content: center;
@@ -33,7 +32,6 @@ h1 span {
 
 textarea {
   width: 37.5rem;
-  /* width: 50%; */
   height: 15.6rem;
   background: #403d84;
   color: #fff;
